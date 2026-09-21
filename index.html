@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Phar Gaung Video</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="nav">
+
+        <a class="logo" href="index.html">
+            Phar <span>Gaung</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#videos">Videos</a>
+            <a href="#categories">Categories</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span>PHAR GAUNG VIDEO</span>
+
+        <h1>
+            Watch Amazing Videos
+        </h1>
+
+        <p>
+            Funny, entertainment and trending videos.
+        </p>
+
+        <a href="#videos" class="btn">
+            Watch Videos
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="stats">
+
+    <div>
+        <strong id="videoCount">0</strong>
+        <span>Videos</span>
+    </div>
+
+    <div>
+        <strong>24/7</strong>
+        <span>Online</span>
+    </div>
+
+    <div>
+        <strong>100%</strong>
+        <span>Free Watch</span>
+    </div>
+
+</section>
+
+
+<section id="categories" class="section">
+
+    <div class="section-title">
+
+        <span>CATEGORIES</span>
+
+        <h2>
+            Browse Videos
+        </h2>
+
+    </div>
+
+    <div class="categories">
+
+        <button data-category="all">
+            🎬 All
+        </button>
+
+        <button data-category="comedy">
+            😂 Comedy
+        </button>
+
+        <button data-category="entertainment">
+            🎭 Entertainment
+        </button>
+
+        <button data-category="short">
+            ⚡ Short
+        </button>
+
+    </div>
+
+</section>
+
+
+<section id="videos" class="section">
+
+    <div class="section-head">
+
+        <div>
+            <span>LATEST VIDEOS</span>
+
+            <h2>
+                Latest Uploads
+            </h2>
+        </div>
+
+        <input
+            type="search"
+            id="search"
+            placeholder="Search video..."
+        >
+
+    </div>
+
+
+    <div
+        id="videoGrid"
+        class="video-grid">
+    </div>
+
+
+    <div
+        id="empty"
+        class="empty">
+
+        No videos available yet.
+
+    </div>
+
+</section>
+
+
+<div
+    id="playerModal"
+    class="modal">
+
+    <div class="player">
+
+        <button id="closePlayer">
+            ×
+        </button>
+
+        <video
+            id="videoPlayer"
+            controls>
+        </video>
+
+        <h2 id="playerTitle"></h2>
+
+        <p id="playerDescription"></p>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <h2>
+        Phar Gaung
+    </h2>
+
+    <p>
+        Video Sharing Platform
+    </p>
+
+    <small>
+        © 2026 Phar Gaung
+    </small>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

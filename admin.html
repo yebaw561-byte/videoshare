@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Phar Gaung Admin</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .hidden {
+            display: none !important;
+        }
+
+        .admin-panel {
+            width: min(900px, 92%);
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        .login-status {
+            margin-top: 15px;
+            color: #e63946;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="nav">
+
+        <a class="logo" href="index.html">
+            Phar <span>Gaung</span>
+        </a>
+
+        <a href="index.html">
+            ← Website
+        </a>
+
+    </div>
+
+</header>
+
+
+<main class="admin-page">
+
+
+    <!-- LOGIN -->
+
+    <div id="loginBox" class="admin-box">
+
+        <h1>Admin Login</h1>
+
+        <p>Login to manage your videos.</p>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Admin Email"
+        >
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Password"
+        >
+
+        <button
+            id="loginBtn"
+            class="admin-btn">
+
+            Login
+
+        </button>
+
+        <p
+            id="loginMessage"
+            class="login-status">
+        </p>
+
+    </div>
+
+
+
+    <!-- ADMIN PANEL -->
+
+    <div
+        id="adminPanel"
+        class="admin-panel hidden">
+
+        <div class="admin-top">
+
+            <div>
+
+                <span>ADMIN PANEL</span>
+
+                <h1>
+                    Welcome Admin 👑
+                </h1>
+
+                <p id="adminEmail"></p>
+
+            </div>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+
+
+        <div class="upload-box">
+
+            <h2>
+                Upload Video
+            </h2>
+
+            <br>
+
+            <label>Video</label>
+
+            <input
+                type="file"
+                id="videoFile"
+                accept="video/*"
+            >
+
+
+            <label>Thumbnail</label>
+
+            <input
+                type="file"
+                id="thumbnailFile"
+                accept="image/*"
+            >
+
+
+            <label>Title</label>
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Video title"
+            >
+
+
+            <label>Description</label>
+
+            <textarea
+                id="description"
+                placeholder="Video description">
+            </textarea>
+
+
+            <label>Category</label>
+
+            <select id="category">
+
+                <option value="comedy">
+                    Comedy
+                </option>
+
+                <option value="entertainment">
+                    Entertainment
+                </option>
+
+                <option value="short">
+                    Short
+                </option>
+
+            </select>
+
+
+            <button
+                id="uploadBtn"
+                class="admin-btn">
+
+                Upload Video
+
+            </button>
+
+            <p id="uploadMessage"></p>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script
+    type="module"
+    src="./admin.js">
+</script>
+
+</body>
+</html>
