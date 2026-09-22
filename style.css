@@ -1,0 +1,1155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: #080808;
+  color: #fff;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+
+  width: 100%;
+  height: 70px;
+
+  background: #090909;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 6%;
+
+  border-bottom: 1px solid #222;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 999;
+}
+
+
+.logo {
+
+  color: #fff;
+
+  font-size: 25px;
+
+  font-weight: 900;
+
+  letter-spacing: 1px;
+}
+
+
+nav {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 28px;
+}
+
+
+nav a {
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 15px;
+}
+
+
+nav a:hover {
+
+  color: #f5c400;
+
+}
+
+
+.menu-btn {
+
+  display: none;
+
+  background: transparent;
+
+  border: none;
+
+  color: white;
+
+  font-size: 28px;
+
+  cursor: pointer;
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+  min-height: 430px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 60px 7%;
+
+  background:
+
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.95),
+      rgba(0,0,0,.65),
+      rgba(0,0,0,.2)
+    ),
+
+    url("images/hero.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+}
+
+
+.hero-content {
+
+  max-width: 650px;
+
+}
+
+
+.hero-content span {
+
+  color: #f5c400;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+}
+
+
+.hero h1 {
+
+  font-size: 52px;
+
+  margin: 15px 0;
+
+}
+
+
+.hero p {
+
+  color: #ddd;
+
+  font-size: 18px;
+
+  margin-bottom: 30px;
+
+}
+
+
+.watch-btn {
+
+  display: inline-block;
+
+  background: #f5c400;
+
+  color: #111;
+
+  text-decoration: none;
+
+  padding: 14px 27px;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-area {
+
+  padding: 25px 6%;
+
+  background: #111;
+
+}
+
+
+.search-area input {
+
+  display: block;
+
+  width: 100%;
+
+  max-width: 700px;
+
+  margin: auto;
+
+  padding: 15px 20px;
+
+  border-radius: 30px;
+
+  border: 1px solid #333;
+
+  background: #1c1c1c;
+
+  color: white;
+
+  outline: none;
+
+  font-size: 15px;
+
+}
+
+
+.search-area input::placeholder {
+
+  color: #888;
+
+}
+
+
+/* =========================
+   VIDEO SECTION
+========================= */
+
+.video-section {
+
+  padding: 45px 6%;
+
+}
+
+
+.section-title {
+
+  margin-bottom: 25px;
+
+}
+
+
+.section-title h2 {
+
+  font-size: 28px;
+
+}
+
+
+.video-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  gap: 18px;
+
+}
+
+
+/* =========================
+   VIDEO CARD
+========================= */
+
+.video-card {
+
+  background: #151515;
+
+  border-radius: 7px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  border: 1px solid #222;
+
+  transition: .25s;
+
+}
+
+
+.video-card:hover {
+
+  transform: translateY(-5px);
+
+  border-color: #555;
+
+}
+
+
+.thumbnail-box {
+
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #222;
+
+}
+
+
+.thumbnail {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+}
+
+
+.play-icon {
+
+  position: absolute;
+
+  left: 50%;
+
+  top: 50%;
+
+  transform:
+    translate(-50%, -50%);
+
+  width: 48px;
+
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(0,0,0,.75);
+
+  border-radius: 50%;
+
+  color: white;
+
+}
+
+
+.video-info {
+
+  padding: 12px;
+
+}
+
+
+.video-info h3 {
+
+  font-size: 15px;
+
+  line-height: 1.4;
+
+  margin-bottom: 6px;
+
+}
+
+
+.video-info p {
+
+  color: #888;
+
+  font-size: 12px;
+
+}
+
+
+.video-info small {
+
+  display: block;
+
+  margin-top: 8px;
+
+  color: #666;
+
+}
+
+
+/* =========================
+   PAGINATION
+========================= */
+
+.pagination {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin: 30px auto 10px;
+
+  padding: 18px;
+
+  background: #090909;
+
+  border-top: 1px solid #222;
+
+}
+
+
+.page-number,
+.page-arrow {
+
+  width: 72px;
+
+  height: 58px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #272727;
+
+  color: white;
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+}
+
+
+.page-number:hover,
+.page-arrow:hover {
+
+  background: #3a3a3a;
+
+}
+
+
+.page-number.active {
+
+  background: #f5c400;
+
+  color: #111;
+
+}
+
+
+.page-arrow {
+
+  font-size: 32px;
+
+}
+
+
+/* =========================
+   WATCH PAGE
+========================= */
+
+.watch-page {
+
+  width: 100%;
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  padding: 35px 20px;
+
+}
+
+
+.player-box {
+
+  width: 100%;
+
+  background: #000;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+}
+
+
+.player-box video {
+
+  width: 100%;
+
+  display: block;
+
+  max-height: 75vh;
+
+}
+
+
+.watch-info {
+
+  margin-top: 20px;
+
+  padding: 25px;
+
+  background: #151515;
+
+  border-radius: 8px;
+
+}
+
+
+.watch-info h1 {
+
+  margin-bottom: 12px;
+
+}
+
+
+.watch-info p {
+
+  color: #aaa;
+
+  line-height: 1.7;
+
+}
+
+
+.watch-meta {
+
+  margin-top: 15px;
+
+  color: #777;
+
+}
+
+
+.back-btn {
+
+  display: inline-block;
+
+  margin-top: 20px;
+
+  padding: 12px 20px;
+
+  background: #f5c400;
+
+  color: #111;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-page {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background: #080808;
+
+}
+
+
+.login-box {
+
+  width: 92%;
+
+  max-width: 420px;
+
+  padding: 35px;
+
+  background: #151515;
+
+  border: 1px solid #292929;
+
+  border-radius: 12px;
+
+}
+
+
+.login-logo {
+
+  text-align: center;
+
+  font-size: 28px;
+
+  font-weight: 900;
+
+  margin-bottom: 20px;
+
+}
+
+
+.login-box h2 {
+
+  text-align: center;
+
+  margin-bottom: 10px;
+
+}
+
+
+.login-box p {
+
+  text-align: center;
+
+  color: #888;
+
+  margin-bottom: 25px;
+
+}
+
+
+.login-box input {
+
+  width: 100%;
+
+  padding: 14px;
+
+  margin-bottom: 15px;
+
+  background: #222;
+
+  border: 1px solid #333;
+
+  border-radius: 6px;
+
+  color: white;
+
+  outline: none;
+
+}
+
+
+.login-box button {
+
+  width: 100%;
+
+  padding: 14px;
+
+  background: #f5c400;
+
+  border: none;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+}
+
+
+.login-box a {
+
+  display: block;
+
+  text-align: center;
+
+  margin-top: 20px;
+
+  color: #aaa;
+
+  text-decoration: none;
+
+}
+
+
+.login-error {
+
+  text-align: center;
+
+  color: #ff4444;
+
+  margin-top: 15px;
+
+}
+
+
+/* =========================
+   ADMIN
+========================= */
+
+.admin-page {
+
+  max-width: 900px;
+
+  margin: auto;
+
+  padding: 40px 20px;
+
+}
+
+
+.admin-box {
+
+  background: #151515;
+
+  border: 1px solid #292929;
+
+  border-radius: 10px;
+
+  padding: 30px;
+
+  margin-bottom: 25px;
+
+}
+
+
+.admin-box h1,
+.admin-box h2 {
+
+  margin-bottom: 10px;
+
+}
+
+
+.admin-subtitle {
+
+  color: #888;
+
+}
+
+
+.admin-box label {
+
+  display: block;
+
+  margin-top: 20px;
+
+  margin-bottom: 8px;
+
+  font-weight: bold;
+
+}
+
+
+.admin-box input[type="text"],
+.admin-box textarea {
+
+  width: 100%;
+
+  padding: 14px;
+
+  background: #222;
+
+  color: white;
+
+  border: 1px solid #333;
+
+  border-radius: 6px;
+
+  outline: none;
+
+}
+
+
+.admin-box textarea {
+
+  height: 110px;
+
+  resize: vertical;
+
+}
+
+
+.admin-box input[type="file"] {
+
+  width: 100%;
+
+  padding: 12px;
+
+  background: #222;
+
+  color: white;
+
+  border-radius: 6px;
+
+}
+
+
+.upload-btn {
+
+  width: 100%;
+
+  margin-top: 25px;
+
+  padding: 15px;
+
+  background: #f5c400;
+
+  border: none;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+}
+
+
+#uploadProgress {
+
+  width: 100%;
+
+  height: 25px;
+
+  margin-top: 20px;
+
+}
+
+
+.upload-status {
+
+  text-align: center;
+
+  margin-top: 15px;
+
+  color: #aaa;
+
+}
+
+
+.admin-video-list {
+
+  margin-top: 20px;
+
+}
+
+
+.admin-video-item {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 15px 0;
+
+  border-bottom: 1px solid #292929;
+
+}
+
+
+.admin-video-item p {
+
+  color: #777;
+
+  margin-top: 5px;
+
+}
+
+
+.delete-btn {
+
+  background: #d00000;
+
+  color: white;
+
+  border: none;
+
+  padding: 9px 14px;
+
+  border-radius: 5px;
+
+}
+
+
+.admin-actions {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+}
+
+
+.admin-actions a {
+
+  color: white;
+
+  text-decoration: none;
+
+}
+
+
+.logout-btn {
+
+  background: #d00000;
+
+  color: white;
+
+  border: none;
+
+  padding: 9px 14px;
+
+  border-radius: 5px;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+  margin-top: 50px;
+
+  padding: 40px;
+
+  text-align: center;
+
+  background: #050505;
+
+  border-top: 1px solid #222;
+
+}
+
+
+footer p {
+
+  margin-top: 10px;
+
+  color: #666;
+
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width: 1100px) {
+
+  .video-grid {
+
+    grid-template-columns:
+      repeat(4, minmax(0, 1fr));
+
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width: 700px) {
+
+  .header {
+
+    height: 60px;
+
+    padding: 0 5%;
+
+  }
+
+
+  .logo {
+
+    font-size: 21px;
+
+  }
+
+
+  nav {
+
+    display: none;
+
+    position: absolute;
+
+    top: 60px;
+
+    left: 0;
+
+    width: 100%;
+
+    background: #090909;
+
+    flex-direction: column;
+
+    gap: 0;
+
+    border-top: 1px solid #222;
+
+  }
+
+
+  nav.active {
+
+    display: flex;
+
+  }
+
+
+  nav a {
+
+    padding: 17px 6%;
+
+    border-bottom: 1px solid #222;
+
+  }
+
+
+  .menu-btn {
+
+    display: block;
+
+  }
+
+
+  .hero {
+
+    min-height: 360px;
+
+    padding: 40px 6%;
+
+  }
+
+
+  .hero h1 {
+
+    font-size: 34px;
+
+  }
+
+
+  .hero p {
+
+    font-size: 15px;
+
+  }
+
+
+  .video-section {
+
+    padding: 30px 4%;
+
+  }
+
+
+  .video-grid {
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+
+  }
+
+
+  .video-info {
+
+    padding: 9px;
+
+  }
+
+
+  .video-info h3 {
+
+    font-size: 13px;
+
+  }
+
+
+  .video-info p {
+
+    font-size: 11px;
+
+  }
+
+
+  .pagination {
+
+    gap: 5px;
+
+    overflow-x: auto;
+
+    justify-content: flex-start;
+
+  }
+
+
+  .page-number,
+  .page-arrow {
+
+    flex: 0 0 45px;
+
+    width: 45px;
+
+    height: 45px;
+
+    font-size: 16px;
+
+  }
+
+
+  .page-arrow {
+
+    font-size: 26px;
+
+  }
+
+
+  .admin-box {
+
+    padding: 20px;
+
+  }
+
+
+  .admin-actions a {
+
+    display: none;
+
+  }
+
+
+  .admin-video-item {
+
+    align-items: flex-start;
+
+  }
+
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PharGaung VIDEOS</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+  <div class="logo">
+    PharGaung
+  </div>
+
+  <nav id="mainNav">
+    <a href="index.html">Home</a>
+    <a href="#latest">Latest</a>
+    <a href="#popular">Popular</a>
+    <a href="login.html">Admin</a>
+  </nav>
+
+  <button class="menu-btn" onclick="toggleMenu()">
+    ☰
+  </button>
+
+</header>
+
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <span>PharGaung VIDEOS</span>
+
+    <h1>
+      အလန်းစား homemade များ
+    </h1>
+
+    <p>
+      တစ်စုတစည်းထဲ
+      တမုန်းကြည့်ကြမယ်
+    </p>
+
+    <a href="#latest" class="watch-btn">
+      ယခုကြည့်မယ်
+    </a>
+
+  </div>
+
+</section>
+
+
+<div class="search-area">
+
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search videos..."
+    oninput="searchVideos()"
+  >
+
+</div>
+
+
+<main>
+
+  <section id="latest" class="video-section">
+
+    <div class="section-title">
+      <h2>Latest Videos</h2>
+    </div>
+
+    <div id="videoGrid" class="video-grid"></div>
+
+    <!-- PAGINATION -->
+    <div id="pagination" class="pagination"></div>
+
+  </section>
+
+
+  <section id="popular" class="video-section">
+
+    <div class="section-title">
+      <h2>Popular Videos</h2>
+    </div>
+
+    <div id="popularGrid" class="video-grid"></div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <h3>PharGaung</h3>
+
+  <p>
+    © 2026 PharGaung VIDEOS
+  </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

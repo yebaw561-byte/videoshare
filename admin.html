@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="my">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Phar Gaung Admin</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+  <div class="logo">
+    PharGaung ADMIN
+  </div>
+
+
+  <div class="admin-actions">
+
+    <a href="index.html">
+      Website
+    </a>
+
+    <button
+      onclick="adminLogout()"
+      class="logout-btn"
+    >
+      Logout
+    </button>
+
+  </div>
+
+</header>
+
+
+<main class="admin-page">
+
+
+<section class="admin-box">
+
+  <h1>
+    Upload Video
+  </h1>
+
+  <p class="admin-subtitle">
+    Cloudinary သို့ Video တင်ရန်
+  </p>
+
+
+  <label>
+    Video Title
+  </label>
+
+  <input
+    type="text"
+    id="videoTitle"
+    placeholder="Video Title"
+  >
+
+
+  <label>
+    Description
+  </label>
+
+  <textarea
+    id="videoDescription"
+    placeholder="Video Description"
+  ></textarea>
+
+
+  <label>
+    Select Video
+  </label>
+
+  <input
+    type="file"
+    id="videoFile"
+    accept="video/mp4,video/*"
+  >
+
+
+  <button
+    class="upload-btn"
+    onclick="uploadVideo()"
+  >
+    ⬆ Upload Video
+  </button>
+
+
+  <progress
+    id="uploadProgress"
+    value="0"
+    max="100"
+  ></progress>
+
+
+  <p
+    id="uploadStatus"
+    class="upload-status"
+  ></p>
+
+</section>
+
+
+<section class="admin-box">
+
+  <h2>
+    Website Videos
+  </h2>
+
+  <div
+    id="adminVideoList"
+    class="admin-video-list"
+  ></div>
+
+</section>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

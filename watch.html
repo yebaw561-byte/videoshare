@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="my">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Watch Video - PharGaung</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header class="header">
+
+  <div class="logo">
+    PharGaung
+  </div>
+
+  <nav id="mainNav">
+
+    <a href="index.html">
+      Home
+    </a>
+
+    <a href="index.html#latest">
+      Latest
+    </a>
+
+    <a href="login.html">
+      Admin
+    </a>
+
+  </nav>
+
+  <button
+    class="menu-btn"
+    onclick="toggleMenu()"
+  >
+    ☰
+  </button>
+
+</header>
+
+
+<main class="watch-page">
+
+  <div class="player-box">
+
+    <video
+      id="mainVideo"
+      controls
+      playsinline
+      preload="metadata"
+    ></video>
+
+  </div>
+
+
+  <div class="watch-info">
+
+    <h1 id="watchTitle">
+      Loading...
+    </h1>
+
+    <p id="watchDescription"></p>
+
+    <div class="watch-meta">
+      <span id="watchViews"></span>
+    </div>
+
+  </div>
+
+
+  <a
+    href="index.html"
+    class="back-btn"
+  >
+    ← Back to Home
+  </a>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
