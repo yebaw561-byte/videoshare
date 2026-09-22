@@ -10,7 +10,7 @@
 const CLOUDINARY_CLOUD_NAME = "lulxogem";
 
 const CLOUDINARY_UPLOAD_PRESET =
-  "buumal_videos";
+  "ml_default";
 
 
 /* ==================================================
